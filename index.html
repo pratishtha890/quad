@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<link rel="stylesheet" href="style.css">
+	<link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+	<title>Solve quadratic equations automatically</title>
+<head>
+
+<body class="clearfix">
+
+	<div id="wrapper" class="clearfix">
+
+		<div id="title">
+			<h1>quadratic-equation:ax 2 + bx + c</h1>
+		</div>
+
+
+		<div id="equation-entry">
+			<input id="a">
+			<p>x<sup>2</sup> + </p>
+			<input id="b">
+			<p>x + </p>
+			<input id="c">
+			<p> = 0</p>
+			<button id="enter" onClick="submit()">Enter</button>
+
+			<div id="answers">
+
+				<div id="prettyanswer"></div>
+
+				<p id="roots">Roots: <span id="x1"></span> and <span id="x2"></span></p>
+				<p>Discriminant: <span id="discriminant"></span></p>
+
+			</div>
+		</div>
+	</div>
+
+<script src="calc.js"></script>
+<script type="text/javascript"
+  src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+<script>MathJax.Hub.Config({messageStyle: 'none',tex2jax: {preview: 'none'}});</script>
+</body>
+</html>
